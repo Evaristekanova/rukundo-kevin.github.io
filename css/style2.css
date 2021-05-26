@@ -1,0 +1,384 @@
+body{
+	margin:0;
+	background-color: #eee;
+}
+
+span.name{
+    float: left;
+    margin-top: 10px;
+}
+
+
+ul{
+	transition: all 1s ease-out;
+	position: fixed;
+	list-style: none;
+    background-color: #eee;
+    color: #444;
+    height: 60px;
+    width: 100%;
+    margin-top: 0;
+    z-index: 1;
+}
+ 
+ ul a{
+ 	text-decoration: none;
+ 	color: #444;
+ }
+
+ul.active{
+	transition: all 1s ease;
+	background-color: #333;
+	color: #fff;
+}
+
+ul.nav_white{
+	transition: all 1s ease-out;
+	background-color: #fff;
+	color: #333;
+}
+ul.active a{
+	color:#fff;
+}
+ul.nav_white a{
+   color: #333;
+	border-bottom:coral;
+}
+ul span.name{
+	margin-left: 0em;
+	margin: 10px;
+}
+
+li.first_list{
+	margin-left: 13em;
+}
+
+li{
+	float: left;
+	padding: 10px 10px;
+	margin: 10px 4em;
+    transition: all 0.1s;
+}
+
+li span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s ease-out;
+}
+
+li span.list:after {
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 2px;
+    background-color: coral;
+     opacity: 0; 
+    /* top: -40%; */
+    bottom: -50%;
+    left: -35px;
+    transition: 0.5s ease-in-out;
+}
+/*
+li:hover{
+	border-bottom: 3px solid #fb9a77;
+	cursor: pointer;
+}
+*/
+li:hover span.list:after {
+  opacity: 1;
+  left: -12px;
+}
+
+.btn{
+    background-color: #eee;
+    border: none;
+    color: #444;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: all 2s;
+    border-bottom:8px solid coral;
+	box-shadow: 0 14px 28px 0 rgba(247, 80, 21, 0.12), 0 10px 15px 0 rgba(247, 80, 21, 0.11);
+}
+
+.btn:hover{
+	background-color: coral;
+	color: #fff;
+	border-radius: 5px;
+    box-shadow: 0 14px 28px 0 rgba(247, 80, 21, 0), 0 10px 15px 0 rgba(247, 80, 21, 0);
+}
+
+.github-btn{
+	font-size: 10px;
+	margin-top: 30px;
+	background-color: coral;
+	transition: all 0.8s;
+
+}
+
+.github-btn:hover{
+	background-color: #fff;
+	border: 1px solid coral;
+	color: #0e0e0e;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 90vh;
+}
+div#why .social{
+	background-color: coral;
+	padding: 5px 10px;
+	width: 550px;
+	min-height: 430px;
+	border-radius: 5px;
+	margin-top:10px;
+	background-color: #fff;
+}
+
+q#why .social:hover{
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.12), 0 0 0 0 rgba(0, 0, 0, 0.11);
+}
+div#who .social{
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.12), 0 5px 5px 0 rgba(0, 0, 0, 0.11);
+    padding: 5px 10px;
+	width: 550px;
+	min-height: 430px;
+	border-radius: 5px;
+	margin-top:10px;
+	background-color: #fff;
+}
+div#who .about{
+ width: 450px;
+}
+div#who .skills{
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.12), 0 0px 0px 0 rgba(0, 0, 0, 0.11);
+    padding: 5px 10px;
+	width: 350px;
+	min-height: 430px;
+	border-radius: 5px;
+	margin-top:10px;
+	background-color: #eee;
+	text-align: left;
+}
+
+div#who .skill-bar{
+	margin:5px 0 0 0;
+	position: relative;
+	height: 20px;
+	width: 98%;
+	background-color: #fff;
+}
+
+div#who .bar {
+	z-index: 0;
+   position: absolute;
+   height: 100%;
+   width: 95%;
+   background-color: coral;
+}
+
+div#who #css{
+   width: 86%;
+}
+
+div#who #js{
+   width: 82%;
+}
+
+div#who #bs{
+   width: 93%;
+}
+
+div#who #express{
+   width: 70%;
+}
+
+div#who #d3{
+   width: 12%;
+}
+
+div#who #react{
+   width: 38%;
+}
+
+
+div#who #nodejs{
+   width: 44%;
+}
+div#who #mocha{
+   width: 20%;
+}
+
+
+.about-text{
+	padding: 10px 8px;
+	margin-top: 100px;
+	font-size: 20px;
+}
+
+div.container #where{
+	margin:auto;
+}
+
+
+.prompt{
+	background-color: #333;
+	width: 550px;
+	min-height: 430px;
+	border-radius: 5px;
+	color: #fff;
+	margin-top:40px;
+    box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.255), 0 10px 10px 0 rgba(0, 0, 0, 0.22);
+}
+
+.control{
+    border-radius: 50%;
+	height: 12px;
+	width:12px;
+	float: left; 
+	margin: 5px 5px;
+}
+
+.green{
+	background-color: green;
+}
+
+.red{
+	background-color: red;
+}
+.yellow{
+	background-color: yellow;
+}
+
+.top_panel{
+	height: 37px;
+	width: 100%;
+	background-color: #444;
+}
+
+.editor{
+   padding: 5px;
+   margin:10px 7px;
+}
+
+#txt{
+	font-size: 30px;
+}
+
+/* move the arrow towards the terminal */
+@keyframes move_arrow{
+	from  {
+		transform: translateX(0px);
+	}
+
+    to{
+    	transform: translateX(1.8em);
+    }
+}
+
+
+.terminal_arrow{
+    animation-name: move_arrow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    color: #333;
+}
+
+@keyframes cursor_blink{
+	from  {
+		display: : block;
+	}
+
+    to{
+    	display: none;
+    }
+}
+
+.cursor{
+	animation: cursor_blink;
+    animation: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+/* move the arrow towards the terminal */
+@keyframes pulse{
+	0%  {
+		transform: scale(0.95);
+	}
+
+    75%{
+    	transform: scale(1.5);
+      	background-color: rgb(249 157 123);
+	    box-shadow: 0 0 28px 0 rgba(247, 80, 21, 0.20);
+    }
+    100%{
+    	transform: scale(1);
+	    background-color: rgb(245 188 168);
+    }
+}
+
+
+.pulse{
+	position: absolute;
+	left: 12%;
+	top: 42%;
+	border-radius: 50%;
+	height: 6px;
+	width: 6px;
+	background-color: rgb(255 127 80);
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15);
+	animation-name: pulse;
+    animation-timing-function: linear;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+span.circle{
+    background-color: coral;
+    padding: 9px;
+    border-radius: 50%;
+}
+
+
+.social{
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.12), 0 5px 5px 0 rgba(0, 0, 0, 0.11);
+    padding: 5px 10px;
+	width: 250px;
+	min-height: 200px;
+	border-radius: 5px;
+	margin-top:10px;
+	background-color: #fff;
+}
+
+.social:hover{
+
+	    box-shadow: 0 14px 28px 0 rgba(247, 80, 21, 0.25), 0 10px 15px 0 rgba(247, 80, 21, .22);
+	    cursor: pointer;
+}
+.social_box{
+
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+    .terminal_arrow{
+    content: "V";
+    animation-name: move_arrow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    color: #333;
+}
+}
