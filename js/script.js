@@ -1,5 +1,5 @@
 
-var text = "Niyongira Passy", speed = 300, id = 1;
+var text = "Kevin Is Here To Make Dreams Reality", speed = 300, id = 1;
 var txt = document.querySelector("#txt");
 
 type_text();
